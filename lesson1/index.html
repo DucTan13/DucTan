@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lesson1</title>
+    </head>
+    <body>
+        <div>
+        <h1> đây là thẻ h1  </h1>
+        <h2> đây là thẻ h2 </h2>
+        <h3> đây là thẻ h3 h3 </h3>
+        <p> đây là thẻ 1 dòng        p</p>
+        <s> đây là thẻ gạch ngang </s>
+        <a href="day la 1 lien ket"> đây là thẻ 1 liên kết</a>
+        
+        <i> đây là thẻ in nghiêng </i>
+        <b> đây là thẻ in<small>lồng vào để chữ ở giữa bé hơn so với chữ bên ngoài </small> đậm  </b>
+        <br>
+         <u> đây là thẻ gạch chân </u>
+         <mark> làm nổi bật chữ </mark>
+         <p> Giá gốc : 100k<br>
+             Giá mới :<s>50K</s>
+        </p>
+        <p>H<sub>2</sub>O</p>
+        <p>X<sup>2</sup></p>
+        <details>
+            <summary>Nội dung tóm tắt</summary>
+            <p>nội dung đã được rút gọn </p>
+        </details>
+        <br>
+        <br>
+        <address>
+            để lưu địa chỉ
+        </address>
+        <blockquote cite="https://dantri.com.vn/xa-hoi/ninh-binh-lenh-di-dan-vung-phan-lu-xa-lu-truoc-18h-hom-nay-20240912162944777.htm">
+            (Dân trí) - Sáng 12/9, 2 trực thăng của Trung đoàn không quân 916 (Sư đoàn 371) cất cánh đi Cao Bằng từ sân bay Gia Lâm.
+             Máy bay mang theo nhiều nhu yếu phẩm cần thiết để hỗ trợ người dân bị ảnh hưởng bởi mưa lũ.
+
+        </blockquote>
+
+        <table>
+            <tr>
+                <th>id</th>
+                <th>name</th>
+                <th>age</th>
+            </tr>
+            <tr>
+                <td>1 </td>
+                <td>nguyen a</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>nguyen b</td>
+                <td>21</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>nguyen c</td>
+                <td>22 </td>
+            </tr>
+        </table>
+        <p>
+            <button onclick="alert(' đã gửi ')"> gửi</button>
+
+        </p>
+        <p>
+            điểm của A
+            <meter min="0" max="100" value=" 95" low="40" high="90"></meter>
+
+        </p>
+        <p>
+            điểm của B
+            <meter min="0" max="100" value=" 50" ></meter>
+
+            
+        </p>
+        <p>
+            Đang tải:
+            <progress max="100" value=" 22"></progress>
+        </p>
+        <p>
+            <a href="https://dantri.com.vn/"> đi đến trang báo dân trí</a>
+            
+        </p>
+        <p>
+            <a href="https://dantri.com.vn/" target="_blank"> đi đến trang  mới báo dân trí</a>
+            
+        </p>
+        <p>
+            <a href="tel:+84999999999999">phone : 999999999999</a>
+        </p>
+        <p>
+            <a href="mailto:nguyenductan13102001@gmail.com"> đi đến gmail</a>
+            
+        </p>
+        <p>
+            <img src="https://cdnphoto.dantri.com.vn/ugIQoVfM09te9OlqKhZB81g5fN8=/zoom/774_516/2024/09/11/img4033-1726039400150.jpg" width="200px" alt="dòng sông">
+            
+        </p>
+        <p>
+            <!-- <iframe src="https://dantri.com.vn/xa-hoi/thu-tuong-mo-cua-ra-thay-mua-dam-de-la-thay-lo-20240911201120378.htm" width="100%" height=" 2000px"  > đưa cả trang web vào </iframe>  -->
+            
+            <img src="img/ảnh.jpg" alt=" hinh chó">
+            <img src="anh-dep.jpg" alt=" ảnh " width="200px" height="200px">
+            <img src="../anh độ">
+        </p>
+        <ol type="i">
+            <li>tea</li>
+            <li>coffe</li>
+            <li>mikk</li>
+        </ol>
+        <ul style="list-style-type: circle;">
+            <li>ổi</li>
+            <li>xoài</li>
+            <li>cam</li>
+        </ul>
+
+
+        <fieldset>
+            <legend>input from</legend>
+            <div id="form">
+                <form action="#"><!-- tất cả các input pải để vìa thẻ  này mới có thể kiểm ra xem có đủ điều kiện k
+                    thẻ disbale vô hiệu hóa thẻ k cho nhập
+                    required: bắt buộc pải nhập
+                    autofocus: để vào trang thì có con trỏ chuột nhấp nháy ở đó luôn   -->
+                    <p>
+                        <label for="full-name">Họ và tên :</label>
+                        <input type="text" id="full-name" name="full_name" placeholder=" vui lòng nhập họ tên" required autofocus>
+                    </p>
+                    <p>
+                        <label for="intro">Giới thiệu</label>
+                        <textarea name="intro" id="intro" cols="40" rows="5" placeholder="vui lòng nhập giới thiệu"></textarea>
+                    </p>
+                    <p>
+                        <label for="age">Tuổi :</label>
+                        <input type="number" min="18" max="50">
+                    </p>
+                    <p>
+                        <label for="price"> giá</label>0
+                        <input type="range" id="price" min="0" max="50" value="20">100
+                    </p>
+                    <p>
+                        <label for="email">email</label>
+                        <input type="email" name="email" id="email">
+                    </p>
+                    <p>
+                        <label for="password">mật khẩu</label>
+                        <input type="password" name=" password" id="password">
+                    </p>
+                    <p>
+                        <label for="document">Tài Liệu</label>
+                        <input type="file" name="document" id="document" accept="image/">
+                    </p>
+                    <p>
+                        <label for="date">Ngày :</label>
+                        <input type="date" name="date" id="date">
+                    </p>
+                    <p>
+                        <label for="time">Giờ :</label>
+                        <input type="time" name="time" id="time" style="width: 100px;">
+                    </p>
+                    <p>
+                        <label for="datetime">Ngày giờ :</label>
+                        <input type="datetime-local" name="datetime" id="datetime" style="width: auto;">
+                    </p>
+                    <p>
+                        <label for="month">Tháng :</label>
+                        <input type="month" name="month" id="month" style="width: auto;">
+                    </p>
+                    <p>
+                        <label for="week">Tuần :</label>
+                        <input type="week" name="week" id="week" style="width: auto;">
+                    </p>
+                    <p>
+                        <label for="gender">Giới Tính</label>
+                        <input type="radio" name="gender" id="gender" value="male" checked>Nam <br>
+                        <input type="radio" name="gender" id="female" value="female">Nữ <br>
+                        <input type="radio" name="gender" id="other" value="other">Khác <br>
+
+                    </p>
+                    <p>
+                        <label for="skill">Kỹ thuật lập trình:</label>
+                        <input type="checkbox" name="skill" id="sql">SQL <br>
+                        <input type="checkbox" name="skill" id="java">JAVA <br>
+                        <input type="checkbox" name="skill" id="html/css/js">HTML/CSS/Js <br>
+                    </p>
+                    <p>
+                        <label for="country">Quốc Tịch</label>
+                        <select name="country" id="country">
+                         
+                            <option value="viet_nam">Việt Nam</option>
+                            <option value="nga">Nga</option>
+                            <option value="lao">Lào</option>
+                            <option value="my">Mỹ</option>
+
+                        </select>
+
+                    </p>
+                    <p>
+                        <button type="submit">gửi</button>
+                        <button type="reset">Làm mới</button>
+                    </p>
+                    <h1 title="đây là thẻ h2 dùng để di chuột vào hiện nội dung "> thẻ H1</h1> 
+                    <p style="width: 200px; height: 100px; border: 2px solid rgb(30, 7, 233); color: rgba(255, 0, 13, 0.945); background-color: azure;">
+                        Đây là thẻ P
+                    </p>
+                    <p style="width: 200px; height: 200px; border: 3px solid rebeccapurple;">Đây là thẻ p2</p>
+                    <p style="width: 300px; height: 300px; border: 1px solid; background-image: url(anh-dep.jpg); background-size: cover; background-position: center;">Đây là p3</p>
+                    <p style="color: blueviolet; opacity: 2.3;">Đây là thẻ p4</p>
+                    <p style="color: #000252;">Đây là thẻ p5</p>
+                    <p style="border: 1px dotted blue;">Đây là p6</p>
+                    <p style="border: thin dotted blue;">Đây là p6</p>
+                    <h1 style="font-family: Arial, Helvetica, sans-serif;"> Đay là h1</h1>
+                    <p style="border: 2px solid rebeccapurple; line-height: 50px; text-indent: 20px;"> Đây là p9</p>
+                </form>
+
+            </div>
+        </fieldset>
+
+
+
+        <table>
+            <tr>
+                <th>STT</th>
+                <th>Tên </th>
+                <th>Tuổi</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Nguyễn A</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Nguyễn b</td>
+                <td> 11</td>
+
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Nguyễn c</td>
+                <td>12</td>
+
+            </tr>
+        </table>
+
+    </div>
+    </body>
+</html>
